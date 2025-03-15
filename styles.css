@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Overall Layout */
+body {
+    font-family: 'Hevilla', sans-serif;
+    background-color: #e1e8f0; /* Light pastel purple-blue */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #282828; /* Dark background */
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f1c40f; /* Hover effect color */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg'); /* Placeholder for your image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Your Gone +1', sans-serif;
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.intro-paragraph {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.subheading {
+    font-family: 'Audio Nugget', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border: 5px solid #f1c40f; /* Light Y2K accent */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #282828;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Hover Effects and Glitch */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0px rgba(0,0,0,0.3), -2px -2px 0px rgba(255,255,255,0.3); }
+    50% { text-shadow: 1px 1px 2px rgba(0,0,0,0.6), -1px -1px 2px rgba(255,255,255,0.6); }
+    100% { text-shadow: 2px 2px 0px rgba(0,0,0,0.3), -2px -2px 0px rgba(255,255,255,0.3); }
+}
+
+.title {
+    animation: glitch 1.5s infinite alternate-reverse;
+}
